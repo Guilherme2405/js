@@ -24,21 +24,28 @@
         border-radius: 10px;
     }
 
-}
 
-div.um {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
 
-}
+
 
 ul {
     border-radius: 10px;
 }
- div#resultado {
+div#resultado {
     background-color: white;
+    width: auto;
+    border-radius: 0;
+}
+
+ ul {
+    padding-bottom: 5px;
+    margin: 0px 10px 5px 10px;
+    
  }
 
+ main > div#resultado > p {
+text-align: center;
+ }
+}
 
 

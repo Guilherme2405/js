@@ -17,13 +17,14 @@ main {
  background-color: rgba(0, 0, 0, 0.774);
  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.568);
 border-radius: 10px;
- width: 50vw;
- height: 50vh;
+ width: 70vw;
+ height: 70vh;
  
  display: flex;
- flex-flow: row nowrap;
- justify-content: space-around;
+ flex-flow: column nowrap;
+ justify-content: center;
  align-items: center;
+ align-content: stretch;
 margin: 150px 0vw;
 }
 
@@ -39,22 +40,38 @@ main > form#tex {
     border-radius: 5px;
 }
 
+div.um {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 
+}
 
 ul {
     background-color: white;
     width: 170px;
+    margin: 0px 10px 0px;
+    padding-bottom: 10px;
 
     display: flex;
     flex-flow: column wrap;
+    border-radius: 10px;
+    
 }
 
-#resultado, #bad{
-    background-color: greenyellow;
-    padding: 15px;
+ div#resultado {
+    background-color: white;
+    width: 45vw;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
 }
 
-#bad {
-    background-color: lightseagreen;
+div#resultado > p {
+    text-align: center;
+
 }
 
+input {
+    border-radius: 10px;
+}
