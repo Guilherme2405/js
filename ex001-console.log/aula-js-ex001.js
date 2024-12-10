@@ -1,0 +1,1 @@
+console.log(`Meu "nome" Estou aprendendo JS as`, 10, `da manhã`); //todo fim de comando não esquecer da virgula
