@@ -19,5 +19,3 @@ while (valor !== 9) {
         break;
     }
 }
-
-console.log(`Esse foi seu resultado ${valor}`)
