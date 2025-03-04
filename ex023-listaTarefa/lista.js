@@ -14,7 +14,6 @@ const marcaLista = document.createElement('li');
  const tarefaNaLista = marcaLista.appendChild(tarefa);
 
  document.querySelector('.marca').appendChild(marcaLista);
-console.log(marcaLista);
 
 //criando botao de remover tarefa
 
@@ -28,7 +27,37 @@ console.log(botao.parentElement);
 
 botao.addEventListener('click', function() {
     botao.parentElement.remove();
+    salvarTarefa() 
 })
 
+salvarTarefa()
+adicionaTarefasSalvas()
 });
+
+
+
+function salvarTarefa() {
+    const guardaTarefas = marca.querySelectorAll('li');
+    const arrTarefas = [];
+
+    for (let marca of guardaTarefas) {
+       let marcatexto = marca.innerText;
+       marcatexto = marcatexto.replace('remover tarefa', '').trim();
+       
+       arrTarefas.push(marcatexto);
+
+    }
+    const marcaJson = JSON.stringify(arrTarefas);
+    localStorage.setItem('marca', marcaJson);
+}
+
+function adicionaTarefasSalvas() {
+    const marca = localStorage.getItem('marca');
+    const listaTarefa = JSON.parse(marca)
+
+    for (let marcas of listaTarefa) {
+
+    }
+    console.log(listaTarefa)
+};
 
