@@ -48,3 +48,25 @@ for(let i = 0; i <=10; i++) {
 carro1.velocidade = 75; //nao e possivel utilizar sem alguma alternativa se estiver usando symbol
 //console.log(carro1)
 console.log(carro1.velocidade)
+
+class Pessoa {
+    constructor (nome,sobrenome) {
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+    }
+    get nomecompleto() {
+        return this.nome +' ' + this.sobrenome;
+    }
+
+    set nomecompleto(valor){
+        console.log('setter')
+        valor.split(' ')
+        this.nome = valor.shift()
+        this.sobrenome = valor.join(' ')
+    }
+}
+
+const pessoa1= new Pessoa('guiga','kirin')
+
+console.log(pessoa1.nome)
+console.log(pessoa1.sobrenome)
