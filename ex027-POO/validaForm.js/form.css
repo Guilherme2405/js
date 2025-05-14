@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 97vh;
+
+    background-color: rgb(168, 187, 168);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: white;
+    margin-bottom: 20px;
+
+    width: 15vw;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.8em;
+    font-family: "Pathway Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    color: rgb(168, 187, 168);   
+    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.692); 
+}
+
+header h1:hover {
+    transition: 0.7s;
+    color:darkseagreen;
+    transform: scale(1) translate(-0%, -7%);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.39);
+}
+
+
+main {
+    background-color: white;
+    border-radius: 10px;
+
+    width: 53vw;
+    padding: 25px;
+    padding-bottom: 45px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.39);
+}
+
+#form{
+    font-size: 1em;
+    
+}
+
+
+
+form input {
+    margin: 10px 0px;
+    width: 13vw;
+    height: 25px;
+
+    border: solid rgba(0, 0, 0, 0.575);
+    border-radius: 5px;
+}
+
+.envio{
+    border: none;
+    background-color:  rgb(168, 187, 168);
+
+    width: 13.6vw;
+    height: 38px;
+}
+
+.envio:hover {
+    transition: 0.7s;
+    background-color: rgb(30, 82, 30);
+    color: white;
+    transform: scale(1) translate(-0%, -7%);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.39);
+}
+
+.cpfvalido{
+    margin-top: 5px;
+    color: green;
+    margin: 10px 0px;
+    width: 14vw;
+    height: 25px;
+    border-radius: 5px;
+    font-weight: 650;
+}
+
+.cpfinvalido{
+    color: red;
+    margin: 10px 0px;
+    width: 14vw;
+    height: 25px;
+    border-radius: 5px;
+    font-weight: 650;
+}
+
+.senhaInvalida{
+
+    color: red;
+    margin: 10px 0px;
+    width: 14vw;
+    height: 25px;
+    border-radius: 5px;
+    font-weight: 650;
+
+}
+
+.senhaValida{
+    margin-top: 5px;
+    color: green;
+    margin: 10px 0px;
+    width: 14vw;
+    height: 25px;
+    border-radius: 5px;
+    font-weight: 650;
+}
+
+.img {
+    width: 25vw;
+    border-radius: 100%;
+    font-weight: 650;
+}
+

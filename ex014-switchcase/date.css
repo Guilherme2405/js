@@ -1,0 +1,57 @@
+@charset "UTF-8";
+* {
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background:linear-gradient(70deg, lightblue, purple);
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+
+}
+
+main{
+    border-radius: 10px;
+}
+main#date {
+    background-color: rgba(128, 0, 128, 0);
+    color: white;
+    flex-flow: row, wrap;
+    padding: 0px;
+
+}
+
+div#table {
+    background-color: rgba(128, 0, 128, 0.432);
+    color: white;
+    border-radius: 10px;
+
+    display: flex;
+    flex: auto;
+    align-content: stretch;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+div#horasDia {
+    background-color: rgba(0, 0, 255, 0.267);
+    border-radius: 5px;
+
+    font-size: 2em;
+    color:  rgb(255, 255, 255);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}

@@ -1,0 +1,21 @@
+// FAÇA UMA FUNÇÃO PARA LER UM VALOR ALEATORIO ENTRE DOIS VALORES
+
+function valorMs (min,max) {
+    let res = Math.random() * (max - min) + min;
+    return Math.floor(res);
+}
+const valor = valorMs(0,10);
+const res = valor;
+
+
+//UTILIZE O LAÇO DE REPETIÇÃO WHILE OU DO WHILE PARA REPETIR ATE ENCONTRAR UM NUMERO SELECIONADO ENTRE OS DOIS VALORES DECLARADO PARA AS FUNÇÕES
+
+while (valor !== 9) {
+    let valor = valorMs(0,10);
+    if (valor !== 9) {
+        console.log(valor);
+    } else if (valor === 9) {
+        console.log(valor);
+        break;
+    }
+}

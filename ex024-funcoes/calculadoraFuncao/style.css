@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+body {
+    background-color: black;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+main {
+    background-color: white;
+    border-radius: 15px;
+    width: 75vw;
+    height: 45vh;
+
+    text-align: center;
+}
+
+.calculadora {
+    width: 400px;
+}
+
+.display {
+    font-size: 2em;
+    width: 100%;
+    text-align: right;
+}
+.btn {
+    width: 100%;
+    height: 40px;
+    font-size: 2em;
+    border: none;
+    background-color: grey;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: rgb(48, 48, 48);
+}
+
+.btn-eq {
+    background-color: black;
+    color: white;
+}

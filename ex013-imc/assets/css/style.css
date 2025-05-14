@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+* {
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+body {
+    background-color: rgba(106, 51, 158, 0.795);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
+}
+
+main {
+ background-color: rgba(0, 0, 0, 0.774);
+ box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.568);
+border-radius: 10px;
+ width: 70vw;
+ height: 70vh;
+ 
+ display: flex;
+ flex-flow: column nowrap;
+ justify-content: center;
+ align-items: center;
+ align-content: stretch;
+margin: 150px 0vw;
+}
+
+main > form {
+    color: white;
+    padding: 3px;
+
+    justify-items: center;
+
+}
+
+main > form#tex {
+    border-radius: 5px;
+}
+
+div.um {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+}
+
+ul {
+    background-color: white;
+    width: 170px;
+    margin: 0px 10px 0px;
+    padding-bottom: 10px;
+
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 10px;
+    
+}
+
+ div#resultado {
+    background-color: white;
+    width: 45vw;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+div#resultado > p {
+    text-align: center;
+
+}
+
+input {
+    border-radius: 10px;
+}

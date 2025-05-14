@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finazilar pagamento</title>
+</head>
+<body>
+
+    <aside id="menuCarrinho">
+        <ol class="itemCarrinho">
+        </ol>
+        <div id="total">
+        </div>
+        <div class="opcaoPagamento">
+            <h3>Opção de pagamento</h3>
+            <form action="">
+
+                <input type="radio" id="cartao" class="opcoes" name="opcoes" value="cartao">
+                <label for="cartao">cartao</label>
+                <div id="parcelas"></div>
+
+                <input type="radio" id="pix" class="opcoes" name="opcoes" value="pix" required>
+                <label for="pix">pix</label>
+                <div id="qrCode"></div>
+            </form>
+            <button type="button" id="finalizaCompra"> Finalizar compra</button>
+        </div>
+        <a href="finalizaPagamento.html" target="_blank"><button type="button">voltar a pagina inicial</button></a>
+    </aside>
+    <div id="exibePagamento">
+        <h3>Compra finalizada</h3>
+        <ol id="itens">
+        </ol>
+        <button type="button" id="ok"> OK!</button>
+    </div>
+
+
+
+<script src="assets/js/bundle3.js"></script>
+</body>
+</html>

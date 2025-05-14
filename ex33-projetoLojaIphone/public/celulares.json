@@ -1,0 +1,125 @@
+
+
+[
+  {
+    "id": "0",
+    "modelo": "iPhone 7",
+    "armazenamento": "32GB",
+    "cor": "Preto",
+    "preco": 899.90,
+    "disponivel": true,
+    "estoque": 3,
+    "imagem": "iphone7-preto.jpg"
+  },
+  {
+    "id": "1",
+    "modelo": "iPhone X",
+    "armazenamento": "64GB",
+    "cor": "Cinza Espacial",
+    "preco": 1799.90,
+    "disponivel": true,
+    "estoque": 1,
+    "imagem": "iphonex-cinza.jpg"
+  },
+  {
+    "id": "2",
+    "modelo": "iPhone XR",
+    "armazenamento": "128GB",
+    "cor": "Azul",
+    "preco": 1899.90,
+    "disponivel": true,
+    "estoque": 6,
+    "imagem": "iphonexr-azul.jpg"
+  },
+  {
+    "id": "3",
+    "modelo": "iPhone 11",
+    "armazenamento": "64GB",
+    "cor": "Preto",
+    "preco": 2299.90,
+    "disponivel": true,
+    "estoque": 4,
+    "imagem": "iphone11-preto.jpg"
+  },
+  {
+    "id": "4",
+    "modelo": "iPhone 12",
+    "armazenamento": "128GB",
+    "cor": "Azul",
+    "preco": 2999.90,
+    "disponivel": true,
+    "estoque": 7,
+    "imagem": "iphone12-azul.jpg"
+  },
+  {
+    "id": "5",
+    "modelo": "iPhone 12 Pro",
+    "armazenamento": "256GB",
+    "cor": "Grafite",
+    "preco": 3499.90,
+    "disponivel": true,
+    "estoque": 5,
+    "imagem": "iphone12pro-grafite.jpg"
+  },
+  {
+    "id": "6",
+    "modelo": "iPhone 12 Pro Max",
+    "armazenamento": "512GB",
+    "cor": "Azul Pacífico",
+    "preco": 3899.90,
+    "disponivel": true,
+    "estoque": 2,
+    "imagem": "iphone12promax-azul.jpg"
+  },
+  {
+    "id": "7",
+    "modelo": "iPhone 13",
+    "armazenamento": "256GB",
+    "cor": "Meia-noite",
+    "preco": 3499.90,
+    "disponivel": true,
+    "estoque": 4,
+    "imagem": "iphone13-meianoite.jpg"
+  },
+  {
+    "id": "8",
+    "modelo": "iPhone 13 Pro",
+    "armazenamento": "512GB",
+    "cor": "Prata",
+    "preco": 4499.90,
+    "disponivel": true,
+    "estoque": 1,
+    "imagem": "iphone13pro-prata.jpg"
+  },
+  {
+    "id": "9",
+    "modelo": "iPhone 14",
+    "armazenamento": "128GB",
+    "cor": "Roxo",
+    "preco": 3999.90,
+    "disponivel": true,
+    "estoque": 7,
+    "imagem": "iphone14-roxo.jpg"
+  },
+  {
+    "id": "10",
+    "modelo": "iPhone 14 Pro",
+    "armazenamento": "512GB",
+    "cor": "Preto Espacial",
+    "preco": 5499.90,
+    "disponivel": true,
+    "estoque": 2,
+    "imagem": "iphone14pro-preto.jpg"
+  },
+  {
+    "id": "11",
+    "modelo": "iPhone 14 Pro Max",
+    "armazenamento": "1TB",
+    "cor": "Roxo-profundo",
+    "preco": 6499.90,
+    "disponivel": true,
+    "estoque": 5,
+    "imagem": "iphone14promax-roxo.jpg"
+  }
+]
+

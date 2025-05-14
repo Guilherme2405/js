@@ -1,0 +1,1 @@
+//!vendas || vendas == '' ? localStorage.setItem('vendas',JSON.stringify()) : console.log('ja criado');

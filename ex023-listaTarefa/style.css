@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body {
+    background-color: black;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+main {
+    background-color: white;
+    border-radius: 15px;
+    width: 75vw;
+    height: 45vh;
+
+    text-align: center;
+}
+
+li {
+  color: grey;
+}
