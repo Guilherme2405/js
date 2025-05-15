@@ -1,5 +1,5 @@
 
-(function(){
+function exibeHTML(){
     const main = document.querySelector('.main');
     let produtos = document.createElement('div');
     produtos.classList.add('produtos');
@@ -12,7 +12,7 @@
         produtos.innerHTML += 
         `
         <div class="celulares">
-        <div class="divImagens">${e.imagem}</div>
+        <div class="divImagens"><img src="imagens-iphone/${e.imagem}" alt="" class="celularesIMG"></div>
         <div class="modelo">${e.modelo}</div>
         <div class="armazenamento">${e.armazenamento}</div>
         <div class="preco">${(preco)}</div>
@@ -21,14 +21,15 @@
         </div>
         `
     });
-})();
+}exibeHTML();
 
-(function (){ //adiciona itens ao carrinho
+function addCarro(){ //adiciona itens ao carrinho
     let meuCarrinho = JSON.parse(localStorage.getItem('meuCarrinho')) || [];
 
     document.querySelectorAll('.addCarrinho').forEach((value) => {
         
         value.addEventListener('click', (e)=>{
+            window.location.reload()
         const values = Number(value.getAttribute('value'));
         const celulares = JSON.parse(localStorage.getItem('iphone'));
 
@@ -49,31 +50,40 @@
         });
         
     });
-})();
+}addCarro();
 
-(function(){ //mostrando itens no html
+function mostraHTMLOl(){ //mostrando itens no html
         let meuCarrinho = JSON.parse(localStorage.getItem('meuCarrinho')) || [];
         meuCarrinho.forEach((e,index) => {
             const preco = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(e.preco); 
             document.querySelector('.itemCarrinho').innerHTML += 
             `
-                <li><div class = "">${e.modelo}</div> <div class = "">${e.armazenamento}</div><div class = "">${e.cor}</div> <div class = "">${preco}</div> <div class = ""><button type="button" class="removeCarrinho"  value="${index}">Remover do carrinho</button></div> 
+                <li class="produtosCarro"><div class = "">${e.modelo}</div> <div class = "">${e.armazenamento}</div><div class = "">${e.cor}</div> <div class = "">${preco}</div> <div class = ""><button type="button" class="removeCarrinho"  value="${index}">Remover do carrinho</button></div> 
             `;
 
             let valor = 0;
             for (let i = 0; i < meuCarrinho.length; i++) valor += e.preco;
 
             const conversaoTotal= new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(valor)
-            document.getElementById('total').innerHTML = `total a pagar${conversaoTotal}`;
+            document.getElementById('total').innerHTML = `Total a pagar: ${conversaoTotal}`;
             
             document.querySelectorAll('.removeCarrinho').forEach((value,indice) => {
                 const meuCarrinho = JSON.parse(localStorage.getItem('meuCarrinho'));
                 value.addEventListener('click', (e,index)=>{
-                    
-                    console.log(value)
+                    window.location.reload()
                     meuCarrinho.splice(value,1)
                     localStorage.setItem('meuCarrinho',JSON.stringify(meuCarrinho));
                 })
             });
         });
-    })();
+    }mostraHTMLOl();
+
+    document.querySelector('#imgCarrinho').addEventListener('click', (e)=> {
+        
+        let nav = document.querySelector('nav');
+        if (nav.style.display === 'none' || nav.style.display === '') {
+            nav.style.display = 'block';
+          } else {
+            nav.style.display = 'none';
+          }
+    })

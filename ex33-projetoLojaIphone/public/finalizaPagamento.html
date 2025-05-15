@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finazilar pagamento</title>
+    <link rel="stylesheet" href="finalizaPagamento.css">
 </head>
 <body>
+    <header>
+        <div class="cabecalho">
+            <div class="logoImg"><img src="logo-loja/logomaior.jpg" alt="" id="imgTitulo"></div>
+             <div class="logoImgCarrinho"><img src="logo-loja/iconeCarrinho.png" alt="" id="imgCarrinho"></div>
+        </div>
+     </header>
 
     <aside id="menuCarrinho">
         <ol class="itemCarrinho">
         </ol>
-        <div id="total">
-        </div>
         <div class="opcaoPagamento">
             <h3>Opção de pagamento</h3>
             <form action="">
-
                 <input type="radio" id="cartao" class="opcoes" name="opcoes" value="cartao">
                 <label for="cartao">cartao</label>
                 <div id="parcelas"></div>
@@ -24,17 +28,21 @@
                 <label for="pix">pix</label>
                 <div id="qrCode"></div>
             </form>
-            <button type="button" id="finalizaCompra"> Finalizar compra</button>
+            <button type="button" id="finalizaCompra"  class="botaoFinaliza"> Finalizar compra</button>
         </div>
-        <a href="finalizaPagamento.html" target="_blank"><button type="button">voltar a pagina inicial</button></a>
-    </aside>
-    <div id="exibePagamento">
-        <h3>Compra finalizada</h3>
-        <ol id="itens">
-        </ol>
-        <button type="button" id="ok"> OK!</button>
-    </div>
+        <div id="total">
+        </div>
 
+        <a href="finalizaPagamento.html" target="_blank"><button type="button" class="botaoFinaliza">voltar a pagina inicial</button></a>
+    </aside>
+    <nav class="nav" id="nav" style="display: none;">
+        <div id="exibePagamento">
+            <h3>Compra finalizada</h3>
+            <ol id="itens">
+            </ol>
+            <a href="GknTechnology.html"><button type="button" id="ok"  class="botaoA"> OK!</button></a>
+        </div>
+    </nav>
 
 
 <script src="assets/js/bundle3.js"></script>

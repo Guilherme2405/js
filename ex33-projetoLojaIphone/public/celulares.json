@@ -9,7 +9,7 @@
     "preco": 899.90,
     "disponivel": true,
     "estoque": 3,
-    "imagem": "iphone7-preto.jpg"
+    "imagem": "/ip7preto.png"
   },
   {
     "id": "1",
@@ -19,7 +19,7 @@
     "preco": 1799.90,
     "disponivel": true,
     "estoque": 1,
-    "imagem": "iphonex-cinza.jpg"
+    "imagem": "/ipxCinzaEspacial.png"
   },
   {
     "id": "2",
@@ -29,7 +29,7 @@
     "preco": 1899.90,
     "disponivel": true,
     "estoque": 6,
-    "imagem": "iphonexr-azul.jpg"
+    "imagem": "/ipxrAzul.png"
   },
   {
     "id": "3",
@@ -39,7 +39,7 @@
     "preco": 2299.90,
     "disponivel": true,
     "estoque": 4,
-    "imagem": "iphone11-preto.jpg"
+    "imagem": "/ip11Preto.png"
   },
   {
     "id": "4",
@@ -49,7 +49,7 @@
     "preco": 2999.90,
     "disponivel": true,
     "estoque": 7,
-    "imagem": "iphone12-azul.jpg"
+    "imagem": "/ip12Azul.png"
   },
   {
     "id": "5",
@@ -59,7 +59,7 @@
     "preco": 3499.90,
     "disponivel": true,
     "estoque": 5,
-    "imagem": "iphone12pro-grafite.jpg"
+    "imagem": "/ip12proGraffit.png"
   },
   {
     "id": "6",
@@ -69,7 +69,7 @@
     "preco": 3899.90,
     "disponivel": true,
     "estoque": 2,
-    "imagem": "iphone12promax-azul.jpg"
+    "imagem": "/ip12promaxAzul.png"
   },
   {
     "id": "7",
@@ -79,7 +79,7 @@
     "preco": 3499.90,
     "disponivel": true,
     "estoque": 4,
-    "imagem": "iphone13-meianoite.jpg"
+    "imagem": "/ip13MeiaNoite.png"
   },
   {
     "id": "8",
@@ -89,7 +89,7 @@
     "preco": 4499.90,
     "disponivel": true,
     "estoque": 1,
-    "imagem": "iphone13pro-prata.jpg"
+    "imagem": "/ip13proPrata.png"
   },
   {
     "id": "9",
@@ -99,7 +99,7 @@
     "preco": 3999.90,
     "disponivel": true,
     "estoque": 7,
-    "imagem": "iphone14-roxo.jpg"
+    "imagem": "/ip14Roxo.png"
   },
   {
     "id": "10",
@@ -109,17 +109,7 @@
     "preco": 5499.90,
     "disponivel": true,
     "estoque": 2,
-    "imagem": "iphone14pro-preto.jpg"
-  },
-  {
-    "id": "11",
-    "modelo": "iPhone 14 Pro Max",
-    "armazenamento": "1TB",
-    "cor": "Roxo-profundo",
-    "preco": 6499.90,
-    "disponivel": true,
-    "estoque": 5,
-    "imagem": "iphone14promax-roxo.jpg"
+    "imagem": "/ip14proPreto.png"
   }
 ]
 

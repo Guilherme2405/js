@@ -3,38 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="GknAdmin.css">
     <title>GKN Administrator</title>
 </head>
 <body>
+    <header>
+        <div class="cabecalho">
+            <div class="logoImg"><img src="logo-loja/logomaior.jpg" alt="" id="imgTitulo"></div>
+             <div class="logoImgCarrinho"><img src="logo-loja/iconeCarrinho.png" alt="" id="imgCarrinho"></div>
+        </div>
+     </header>
 
-    <section id="cadastroProdutos">
-        <form action="">
-            <label for="modelo">Modelo:</label>
-            <input type="text" name="modelo" id="modelo" class="formNome" required>
 
-            <label for="armazenamento">Armanemento:</label>
-            <input type="text" name="armazenamento"  id="armazenamento" class="formArmazenamento" required>
-
-            <label for="cor">Cor:</label>
-            <input type="text" name="cor" id="cor" class="formCor" required>
-
-            <label for="preco">Preço:</label>
-            <input type="text" name="preco" id="preco" class="formPreco" required>
-
-            <label for="disponivel">Disponivel:</label>
-            <input type="text" name="disponivel" id="disponivel" class="formDisponivel" required>
-
-            <label for="estoque">Estoque:</label>
-            <input type="text" name="estoque" id="estoque" class="formEstoque" required>
-
-            <label for="imagem">Armanemento:</label>
-            <input type="image" name="imagem" id="imagem" class="formImagem">
-
-            <input type="submit" class="Registrar" id="registrar">
-        </form>
-    </section>
 
     <main class="main">
+        
+        <aside id="cadastroProdutos">
+            <form action="" class="add">
+                <h2>Adiciona Produto</h2>
+                <label for="modelo">Modelo:</label>
+                <input type="text" name="modelo" id="modelo" class="formEditor" required><br>
+    
+                <label for="armazenamento">Armanemento:</label>
+                <input type="text" name="armazenamento"  id="armazenamento" class="formEditor" required><br>
+    
+                <label for="cor" class="cor">Cor:</label>
+                <input type="text" name="cor" id="cor" class="formEditor" required><br>
+    
+                <label for="preco">Preço:</label>
+                <input type="text" name="preco" id="preco" class="formEditor" required><br>
+    
+                <label for="disponivel">Disponivel:</label>
+                <input type="text" name="disponivel" id="disponivel" class="formEditor" required><br>
+    
+                <label for="estoque">Estoque:</label>
+                <input type="text" name="estoque" id="estoque" class="formEditor" required><br>
+    
+                <label for="imagem"></label>
+                <input type="file" name="imagem" id="imagem" class="botao"><br>
+    
+                <input type="submit" class="botao" id="registrar">
+                
+            </form>
+
+            <div id="editorDeItens">
+                <div>
+                    <ol id="valorVendido"></ol>
+                    <div id="faturamentoL"></div>
+                </div>
+            </div>
+        </aside>
         <table border="1">
             <thead>
                 <tr>
@@ -51,13 +69,9 @@
                 <tbody id="tabelaBody"></tbody>
             </thead>
         </table>
-        <div id="editorDeItens"></div>
     </main>
     <aside>
-        <div>
-            <ol id="valorVendido"></ol>
-            <div id="faturamento"></div>
-        </div>
+
 
     </aside>
 

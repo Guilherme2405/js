@@ -27,7 +27,7 @@ class Produto {
 }
 
 // Função para adicionar um produto
-document.getElementById('cadastroProdutos').addEventListener('submit', function(e){
+document.getElementById('registrar').addEventListener('submit', function(e){
     
     e.preventDefault(); // Evitar o envio do formulário
 
@@ -92,31 +92,32 @@ document.getElementById('cadastroProdutos').addEventListener('submit', function(
             divItemEditado.classList.add('editarItem'); //adicionando classe as divs
             document.querySelector('#editorDeItens').innerHTML =  
             `
-            <form action="">
-            <h2>Editar Produto</h2>
+            <form action="" class="editaProduto">
+            <h2>Edita Produto</h2>
         
             <label for="editaModelo">modelo:</label>
-            <input type="text" id="editaModelo" name="editaModelo"><br><br>
+            <input type="text" id="editaModelo" name="editaModelo" class="formEditor"><br>
 
             <label for="editaArmazenamento">armazenamento:</label>
-            <input type="text" id="editaArmazenamento" name="nome"><br><br>
+            <input type="text" id="editaArmazenamento" name="nome" class="formEditor"><br>
 
             <label for="editaCor">Cor:</label>
-            <input type="text" id="editaCor" name="nome"><br><br>
+            <input type="text" id="editaCor" name="nome" class="formEditor"><br>
 
              <label for="editaPreco">Preço (R$):</label>
-            <input type="number" id="editaPreco" name="preco" step="0.01" min="0"><br><br>
+            <input type="number" id="editaPreco" name="preco" step="0.01" min="0" class="formEditor"><br>
         
             <label for="editaDisponivel">disponivel:</label>
-            <textarea id="editaDisponivel" name="descricao" rows="1"></textarea><br><br>
+            <input id="editaDisponivel" name="descricao" rows="1" class="formEditor"></input><br>
         
             <label for="editaEstoque">Estoque:</label>
-            <input type="number" id="editaEstoque" name="estoque" min="0"><br><br>
+            <input type="number" id="editaEstoque" name="estoque" min="0" class="formEditor"><br>
+            
 
             <label for="editaImagem">imagem:</label>
-            <input type="image" id="editaImagem" name="estoque" min="0"><br><br>
+            <input type="file" class="botao" id="editaImagem" name="estoque" min="0"><br>
         
-            <button type="submit" id="salvaItem">Salvar Alterações</button>
+            <button type="submit" class="botao" id="salvaItem">Salvar Alterações</button>
             </form>
             `;
            
@@ -153,7 +154,7 @@ document.getElementById('cadastroProdutos').addEventListener('submit', function(
 function faturamentoDaEmpresa(){
     const valorVendido = document.querySelector('#valorVendido');
     const vendas = JSON.parse(localStorage.getItem('vendas')) || [];
-    const faturamento = document.querySelector('#faturamento');
+    const faturamento = document.querySelector('#faturamentoL');
 
     let faturamentoTotal = 0;
         for (let i = 0; i < vendas.length; i++) {
@@ -162,7 +163,7 @@ function faturamentoDaEmpresa(){
         }
     vendas.forEach(e => {
         const preco = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(e.preco);
-        valorVendido.innerHTML += `<li class="itens">${e.modelo} ${e.disponivel} ${preco}</li>`;
+        valorVendido.innerHTML += `<li class="itens"><div class="modelo">${e.modelo}</div> <div class="preco">${preco}</div></li>`;
 
         const valorFaturamento = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(faturamentoTotal);
         faturamento.innerHTML = `<div id="fatura">valor total faturado: ${valorFaturamento}</div>`;

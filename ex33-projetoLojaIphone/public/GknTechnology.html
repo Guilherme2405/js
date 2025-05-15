@@ -4,29 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="lojaGKN.css">
-    <link rel="stylesheet" href="geralGKN.css">
+
     
 
     <title>GKN Technology</title>
 </head>
 <body>
     <header>
-        <div class="logoImg"><img src="logo-loja/logomaior.jpg" alt="" id="imgTitulo"></div>
+       <div class="cabecalho">
+           <div class="logoImg"><img src="logo-loja/logomaior.jpg" alt="" id="imgTitulo"></div>
+            <div class="logoImgCarrinho">
+                <img src="logo-loja/iconeCarrinho.png" alt="" id="imgCarrinho">
+                <div id="menuCarro">
+                    <nav class="nav" id="nav" style="display: none;">
+                    <aside id="menuCarrinho">
+                        <h3 class="navH3">meu Carrinho</h3>
+                        <ol class="itemCarrinho">
+                        </ol>
+                        <div id="total"></div>
+                        <a href="finalizaPagamento.html" target="_blank"><button type="button" class="continuaPag">Continuar pagamento</button></a>
+                    </aside>
+                    </nav>
+            </div>
+            </div>
     </header>
 
     <main class="main">
     </main>
-<!--
-        <aside id="menuCarrinho">
-        <ol class="itemCarrinho">
-        </ol>
-        <div id="total"></div>
-        <a href="finalizaPagamento.html" target="_blank"><button type="button">Continuar pagamento</button></a>
-    </aside>
 
--->
-
-    
+    <div id="botaoHome"><a href="GknTechnology.html"><img src="logo-loja/iconeHome.png" alt="" id="iconeHome"></a></div>
+    <footer id="rodape"> Projeto GKN</footer>
     <script src="assets/js/bundle1.js"></script>
 </body>
 </html>
