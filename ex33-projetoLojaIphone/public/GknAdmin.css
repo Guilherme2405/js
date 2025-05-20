@@ -88,6 +88,16 @@ aside {
     flex-direction: row;
 }
 
+#cadastroProdutos {
+    width: 100vw;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
 .add {
     width: 30vw;
 }
@@ -153,17 +163,6 @@ td {
     text-align: center;
 }
 
-#editorDeItens {
-
-    width: 100vw;
-    background-color: black;
-    color: white;
-
-    display: flex;
-    justify-content: space-evenly;
-    align-content: center;
-    align-items: center;
-}
 #itens{
     
     text-align: left;

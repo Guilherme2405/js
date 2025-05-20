@@ -17,37 +17,38 @@
 
 
     <main class="main">
-        
+
         <aside id="cadastroProdutos">
+            
             <form action="" class="add">
-                <h2>Adiciona Produto</h2>
-                <label for="modelo">Modelo:</label>
-                <input type="text" name="modelo" id="modelo" class="formEditor" required><br>
-    
-                <label for="armazenamento">Armanemento:</label>
-                <input type="text" name="armazenamento"  id="armazenamento" class="formEditor" required><br>
-    
-                <label for="cor" class="cor">Cor:</label>
-                <input type="text" name="cor" id="cor" class="formEditor" required><br>
-    
-                <label for="preco">Preço:</label>
-                <input type="text" name="preco" id="preco" class="formEditor" required><br>
-    
-                <label for="disponivel">Disponivel:</label>
-                <input type="text" name="disponivel" id="disponivel" class="formEditor" required><br>
-    
-                <label for="estoque">Estoque:</label>
-                <input type="text" name="estoque" id="estoque" class="formEditor" required><br>
-    
-                <label for="imagem"></label>
-                <input type="file" name="imagem" id="imagem" class="botao"><br>
-    
-                <input type="submit" class="botao" id="registrar">
+                <div>
+                    <h2>Adiciona Produto</h2>
+                    <label for="modelo">Modelo:</label>
+                    <input type="text" name="modelo" id="modelo" class="formEditor" required><br>
+                    <label for="armazenamento">Armanemento:</label>
+                    <input type="text" name="armazenamento"  id="armazenamento" class="formEditor" required><br>
+                    <label for="cor" class="cor">Cor:</label>
+                    <input type="text" name="cor" id="cor" class="formEditor" required><br>
+                    <label for="preco">Preço:</label>
+                    <input type="text" name="preco" id="preco" class="formEditor" required><br>
+                    <label for="disponivel">Disponivel:</label>
+                    <input type="text" name="disponivel" id="disponivel" class="formEditor" required><br>
+                    <label for="estoque">Estoque:</label>
+                    <input type="text" name="estoque" id="estoque" class="formEditor" required><br>
+                    <label for="imagem"></label>
+                    <input type="file" name="imagem" id="imagem" class="botao"><br>
+                    <input type="submit" class="botao" id="registrar">
+                </div>
+
                 
             </form>
 
-
-            </div>
+                <div id="editorDeItens">
+                    <div id="itens">
+                        <ol id="valorVendido"></ol>
+                    </div>
+                    <div id="faturamentoL"></div>
+                </div>
         </aside>
         <table border="1">
             <thead>
@@ -66,11 +67,7 @@
             </thead>
         </table>
     </main>
-                <div id="editorDeItens">
-                <div id="itens">
-                    <ol id="valorVendido"></ol>
-                    <div id="faturamentoL"></div>
-                </div>
+
 
 <script src="assets/js/bundle2.js"></script>
 </body>
